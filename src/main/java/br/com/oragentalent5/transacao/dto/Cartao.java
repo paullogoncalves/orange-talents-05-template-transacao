@@ -18,8 +18,16 @@ public class Cartao {
 	public String getEmail() {
 		return email;
 	}
-    
-	
-	
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Cartao [id=");
+		builder.append(id);
+		builder.append(", email=");
+		builder.append(email);
+		builder.append("]");
+		return builder.toString();
+	}
     
 }

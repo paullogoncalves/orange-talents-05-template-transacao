@@ -24,6 +24,19 @@ public class Estabelecimento {
 	public String getEndereco() {
 		return endereco;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Estabelecimento [nome=");
+		builder.append(nome);
+		builder.append(", cidade=");
+		builder.append(cidade);
+		builder.append(", endereco=");
+		builder.append(endereco);
+		builder.append("]");
+		return builder.toString();
+	}
     
 	
     
