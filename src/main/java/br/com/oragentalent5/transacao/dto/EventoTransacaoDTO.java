@@ -1,6 +1,18 @@
 package br.com.oragentalent5.transacao.dto;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
 public class EventoTransacaoDTO {
+	
+	@Id
+	private Long idTransacao;
+	
     private String id;
     private String valor;
     private Estabelecimento estabelecimento;
